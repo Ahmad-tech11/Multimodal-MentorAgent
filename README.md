@@ -1,6 +1,5 @@
 # Multimodal-MentorAgent
 
-### 基于多模态大模型智能体的行业导师实践材料智能审核系统
 **Multimodal Large Model Agent for Intelligent Review of Industry Mentor Student Materials**
 
 ---
@@ -90,7 +89,7 @@ Rather than executing four or five disjointed LLM calls that inflate network lat
 ### 3.1 End-to-End Pipeline Visualization
 The visual dataflow spanning document ingestion, dual-pass LLM execution, and export artifact generation is illustrated below:
 
-![System Architecture Diagram](assets/system_architecture_diagram.png)
+![System Architecture Diagram](assets/system_architecture_diagram.jpg)
 
 ### 3.2 Enterprise User Interface Dashboard
 The user interface is built on Gradio, presenting a dual-column layout optimized for review productivity:
@@ -220,12 +219,12 @@ The pipeline was benchmarked across standard engineering practicum scenarios to 
 ### 7.2 Case Study 1: High-Alignment Verification
 In a fully grounded deliverable (e.g., Plant Disease Detection on Edge IoT), all diagram components (Camera Node, Edge Preprocessing, MobileNetV2 INT8 Classifier, Relay Actuator, MQTT Broker) strictly match written descriptions:
 
-![Alignment Success Case](assets/alignment_success_case.png)
+![Alignment Success Case](assets/alignment_success_case.jpg)
 
 ### 7.3 Case Study 2: Discrepancy & Hallucination Detection
 In a mismatched deliverable (e.g., IoT Fall Detection featuring an unreferenced Redis Cache block and an unsupported hardware claim), the agent immediately isolates the inconsistency:
 
-![Discrepancy Detection Case](assets/discrepancy_detection_case.png)
+![Discrepancy Detection Case](assets/discrepancy_detection_case.jpg)
 
 ---
 
@@ -429,10 +428,11 @@ Multimodal-MentorAgent/
 This project is licensed under the Apache 2.0 License. If you utilize this system in academic research or industrial practicum review frameworks, please cite:
 
 ```bibtex
-@article{multimodal_mentoragent2026,
+@misc{ahmad2026multimodal_mentoragent,
   title={Multimodal-MentorAgent: Autonomous Industry Mentor Review System for Multimodal Practicum Deliverables},
-  author={Multimodal-MentorAgent Development Consortium},
-  journal={Advanced Agentic Software Engineering Reports},
-  year={2026}
+  author={Ahmad, Muhammad},
+  howpublished={Department of Computer Science, COMSATS University Islamabad},
+  year={2026},
+  url={[https://github.com/Ahmad-tech11/Multimodal-MentorAgent](https://github.com/Ahmad-tech11/Multimodal-MentorAgent)}
 }
 ```
